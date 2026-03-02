@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Endee RAG Q&A</title>
+</head>
+<body>
+  <h2>AI Document Question Answering</h2>
+
+  <input id="q" placeholder="Ask a question" size="60"/>
+  <button onclick="ask()">Ask</button>
+
+  <pre id="ans"></pre>
+
+  <script>
+    async function ask() {
+      const q = document.getElementById("q").value;
+      const res = await fetch(`http://127.0.0.1:8000/ask?question=${q}`);
+      const data = await res.json();
+      document.getElementById("ans").innerText = data.answer;
+    }
+  </script>
+</body>
+</html>
