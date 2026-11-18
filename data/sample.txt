@@ -1,0 +1,4 @@
+A Deterministic Finite Automaton (DFA) is a finite state machine.
+It consists of a finite set of states, a start state, a set of
+accepting states, and a transition function.
+DFA is widely used in compiler design and automata theory.

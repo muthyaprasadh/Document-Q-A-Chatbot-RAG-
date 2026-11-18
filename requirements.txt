@@ -1,0 +1,7 @@
+endee
+sentence-transformers
+fastapi>=0.110
+uvicorn>=0.27
+numpy>=1.26
+pypdf>=4.0
+openai>=1.0
